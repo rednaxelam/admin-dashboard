@@ -11,7 +11,7 @@ body {
   display: grid;
   min-height: 100vh;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: auto auto 1fr;
+  grid-template-rows: auto auto auto 1fr;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -65,3 +65,98 @@ nav a, nav a:active, nav a:visited, nav a:hover {
 .last-sidebar-panel-link img, .last-sidebar-panel-link a {
   padding-bottom: 35px;
 }
+
+#header {
+  grid-column: 2 / -1;
+  grid-row: 1;
+  display: grid;
+  padding: 25px 40px 20px 40px;
+  row-gap: 30px;
+
+}
+
+#header-top {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.icon {
+  height: 1.7rem;
+}
+
+.pfp {
+  border-radius: 100%;
+}
+
+.small-pfp {
+  height: 3rem;
+}
+
+.big-pfp {
+  height: 4.8rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.large-font {
+  font-size: 1.5rem;
+}
+
+input[type="search"] {
+  border-radius: 1rem;
+  background-color: #e2e8f0;
+  height: 2rem;
+  padding-left: 1rem;
+}
+
+.add-padding-left {
+  padding-left: 200px;
+}
+
+.big-font {
+  font-size: 1.5rem;
+}
+
+.small-font {
+  font-size: 1rem;
+}
+
+.very-big-font {
+  font-size: 2rem;
+}
+
+button {
+  border-radius: 2rem;
+  background-color: #0284c7;
+  color: white;
+  font-size: 1.3rem;
+  padding: 0.8rem 0;
+  width: 7rem;
+  align-self: center;
+}
+
+#header-bottom {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
+  gap: 30px;
+}
+
+#hello {
+  display: grid;
+  align-content: center;
+  justify-content: left;
+}
+
+#gradient {
+  background: linear-gradient(to bottom, white, #e2e8f0);
+  height: 10px;
+  grid-column: 2 / -1;
+}
+
