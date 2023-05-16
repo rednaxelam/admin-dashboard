@@ -94,10 +94,14 @@ nav a, nav a:active, nav a:visited, nav a:hover {
 
 .small-pfp {
   height: 3rem;
+  width: 3rem;
+  object-fit: cover;
 }
 
 .big-pfp {
   height: 4.8rem;
+  width: 4.8rem;
+  object-fit: cover;
 }
 
 .bold {
@@ -160,3 +164,118 @@ button {
   grid-column: 2 / -1;
 }
 
+#main-content {
+  background-color: #e2e8f0;
+  padding: 40px 20px;
+  grid-row: 4 / -1;
+  grid-column: 2 / -1;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 40px;
+}
+
+#project-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 25px;
+  padding-top: 20px;
+}
+
+.project-card {
+  height: 10rem;
+  border-radius: 15px;
+  background-color: white;
+  color: #475569;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 10px 1fr;
+}
+
+.project-card-ribbon {
+  background-color: #f59e0b;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.project-card-content {
+  padding: 1.5rem 1rem 1rem 1rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 5px;
+}
+
+.project-card-icons {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: right;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.black-font {
+  color: black;
+}
+
+#extra-content {
+  grid-row: 2 / -1;
+  grid-column: 2 / -1;
+  display: grid;
+  justify-content: left;
+  align-content: start;
+  row-gap: 30px;
+  padding-right: 30px;
+}
+
+#announcements {
+  display: grid;
+  justify-content: left;
+  align-content: start;
+  row-gap: 15px;
+  font-size: 0.8rem;
+}
+
+#announcements-container {
+  display: grid;
+  padding: 15px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.announcement {
+  display: grid;
+  justify-content: left;
+  padding: 15px 10px;
+  color: #475569;
+}
+
+.add-border-top {
+  border-top: 1px solid #94a3b8;
+}
+
+.announcement p:first-child {
+  color: black;
+}
+
+#trending {
+  display: grid;
+  align-content: start;
+  row-gap: 15px;
+}
+
+#trending-container {
+  padding: 15px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  display: grid;
+  align-items: left;
+  row-gap: 20px;
+}
+
+.trending-profile {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: left;
+  column-gap: 13px;
+}
