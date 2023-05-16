@@ -122,10 +122,11 @@ input[type="search"] {
   background-color: #e2e8f0;
   height: 2rem;
   padding-left: 1rem;
+  max-width: 900px;
 }
 
 .add-padding-left {
-  padding-left: 200px;
+  padding-left: 50px;
 }
 
 .big-font {
